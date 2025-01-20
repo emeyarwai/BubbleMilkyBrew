@@ -1,0 +1,183 @@
+body {
+    background-color: pink;
+}
+
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+.box {
+    background-color: #7FFFD4;
+    padding: 10px;
+    border: 5px solid black;
+    margin: 10px;
+}
+
+.paragraph-text {
+    color: orange;
+    text-align: center;
+}
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.black-text {
+    color: black;
+}
+
+.centered-container {
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 4px solid Lightsteelblue;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: Lavender;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(98, 52, 18, 0.9); /* Semi-transparent background */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.logo img {
+height: 70px;
+}
+
+header nav ul {
+list-style: none;
+display: flex;
+}
+
+header nav ul li {
+margin: 0 15px;
+}
+
+header nav ul li a {
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+border-radius: 5px;
+transition: background 0.3s ease, transform 0.3s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+background: #f4d03f;
+color: #623412;
+transform: scale(1.1);
+}
+
+/* Styling for the Login Button */
+.login-container {
+margin-left: auto; /* Align the login button to the right */
+}
+
+.login-btn {
+color: white;
+background-color: #e74c3c; /* Bold red background */
+padding: 12px 25px;
+border-radius: 25px; /* Rounded button */
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+transition: background 0.3s ease, transform 0.3s;
+}
+
+.login-btn:hover {
+background-color: #c0392b; /* Darker red on hover */
+transform: scale(1.1);
+}
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: rgba(98, 52, 18, 0.9); /* Semi-transparent background */
+padding: 10px 20px;
+z-index: 1000;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.logo img {
+height: 70px;
+}
+
+header nav ul {
+list-style: none;
+display: flex;
+}
+
+header nav ul li {
+margin: 0 15px;
+}
+
+header nav ul li a {
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+border-radius: 5px;
+transition: background 0.3s ease, transform 0.3s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+background: #f4d03f;
+color: #623412;
+transform: scale(1.1);
+}
+
+/* Styling for the Login Button */
+.login-container {
+margin-left: auto; /* Align the login button to the right */
+}
+
+.login-btn {
+color: white;
+background-color: #e74c3c; /* Bold red background */
+padding: 12px 25px;
+border-radius: 25px; /* Rounded button */
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+transition: background 0.3s ease, transform 0.3s;
+}
+
+.login-btn:hover {
+background-color: #c0392b; /* Darker red on hover */
+transform: scale(1.1);
+}

@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding-top: 80px
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(98, 52, 18, 0.9); /* Semi-transparent background */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.header .logo img {
+    height: 70px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background: #f4d03f;
+    color: #623412;
+    transform: scale(1.1);
+}
+
+.login-container {
+    margin-left: auto; /* Align the login button to the right */
+}
+
+.login-btn {
+    color: white;
+    background-color: #e74c3c; /* Bold red background */
+    padding: 12px 25px;
+    border-radius: 25px; /* Rounded button */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.1);
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.heading-description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.search-category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the search bar and category selector */
+    margin-bottom: 30px;
+}
+
+.search-category-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid #623412;
+}
+
+.search-category-container select {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #623412;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Rest of the CSS for Items and Sections */
+.menu-section {
+    display: block;
+}
+
+#milktea, #fruit-beverages {
+    display: block;
+}
+
+/* Optional: Add some space below the heading */
+.heading {
+    margin-bottom: 20px;
+}
+
+/* Menu Section Styling */
+.menu-section {
+    display: block; /* Hidden by default */
+}
+
+/* Show all products by default */
+#milktea, #fruit-beverages {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#searchInput {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #623412;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.item.match {
+    position: relative;
+    top: -10px; /* Adjust the vertical position */
+    right: 20px; /* Move to the right */
+    transition: top 0.3s, right 0.3s; /* Smooth transition for movement */
+}
+
+/* Container for items */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Default alignment */
+}
+
+.container .item.match {
+    justify-content: flex-end;
+}
+
+.item {
+    background: white;
+    border: 1px solid #623412; /* Border around each item */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* 3 items per row with margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text */
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Item Hover Effect */
+.item:hover {
+    border: 2px solid #FFDD00; /* Change border color to a bright yellow */
+    box-shadow: 0 4px 20px 623412(255, 221, 0, 0.6); /* Glowing yellow shadow effect */
+    transform: scale(1.05); /* Slightly enlarge the item on hover */
+    background-color: #f8f0e1; /* Light background color on hover */
+}
+
+/* Image Style */
+.item img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s; /* Smooth transition for image scaling */
+}
+
+/* Image Hover Effect */
+.item:hover img {
+    transform: scale(1.1); /* Slightly enlarge the image on hover for emphasis */
+}
+
+.item h3 {
+    margin: 10px 0; /* Space above and below the item title */
+}
+
+.item p {
+    margin: 10px 0; /* Space above and below the price */
+}
+
+.item button {
+    background-color: #623412; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    padding: 10px 15px; /* Padding for button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button Hover Effect */
+.item button:hover {
+    background-color: #FFDD00; /* Bright yellow on hover */
+    color: #623412; /* Change text color to dark */
+    border: 1px solid #623412; /* Add border on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .item {
+        width: calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 100%; /* 1 item per row on very small screens */
+    }
+}
+footer {
+    background: #623412;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}

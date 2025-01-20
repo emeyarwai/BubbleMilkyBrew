@@ -1,0 +1,245 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: url('/title-background.jpg') no-repeat center center/cover; /* Add background image */
+    color: #333;
+    margin: 0;
+    padding-top: 80px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(98, 52, 18, 0.9); /* Semi-transparent background */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+header .logo img {
+    height: 70px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+    background: #f4d03f;
+    color: #623412;
+    transform: scale(1.1);
+}
+
+.login-container {
+    margin-left: auto; /* Align the login button to the right */
+}
+
+.login-btn {
+    color: white;
+    background-color: #e74c3c; /* Bold red background */
+    padding: 12px 25px;
+    border-radius: 25px; /* Rounded button */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.1);
+}
+
+/* About Section */
+.heading {
+    text-align: center;
+    color: black;
+    margin: 50px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.about-content {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Styling the Team Section */
+.team {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.team-cards {
+    display: flex; /* Align items horizontally */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Add space between the cards */
+}
+
+.card {
+    background: white;
+    border: 1px solid #623412;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.card-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-role {
+    font-size: 1.1rem;
+    color: #623412;
+}
+
+.class-email {
+    color: gray;
+}
+
+.button {
+    background-color: #623412;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4A2C1D;
+}
+
+.footer {
+    background: #623412;
+    color: white;
+    padding: 20px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; /* Push items to the left and right */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-box {
+    flex: 1; /* Make each box take equal space */
+    min-width: 250px; /* Ensure minimum size */
+    margin: 10px 20px;
+}
+
+.footer-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f4d03f;
+}
+
+.footer-box p, 
+.footer-box a {
+    font-size: 1rem;
+    color: #fefefe;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.footer-box a:hover {
+    text-decoration: underline;
+    color: #ffd966;
+}
+
+.promo-form {
+    display: flex;
+    gap: 10px;
+}
+
+.promo-form input {
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    flex: 1; /* Make the input field expand */
+}
+
+.promo-form button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #f4d03f;
+    color: #623412;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.promo-form button:hover {
+    background: #ffd966;
+    transform: scale(1.05);
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    border-top: 1px solid #ffffff33;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links li a {
+    color: #fefefe;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #f4d03f;
+}

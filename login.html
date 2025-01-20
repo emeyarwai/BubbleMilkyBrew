@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bubble Milky Brew</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" />
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="login-container">
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Login Form Start -->
+    <main>
+        <div class="login-container-form">
+            <h1>Login to Your Account</h1>
+            <form id="loginForm" class="login-form" onsubmit="return validateLogin(event)">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="submit-btn">Login</button>
+
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+            </form>
+        </div>
+    </main>
+    <!-- Login Form End -->
+
+    <footer>
+        <p>&copy; 2025 Bubble Milky Brew. All rights reserved.</p>
+        <ul>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#terms">Terms of Use</a></li>
+        </ul>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

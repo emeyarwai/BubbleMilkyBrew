@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Milky Brew</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" />
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="login-container">
+            <a href="login.html" class="login-btn">Login</a>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
+    <main>
+        <h1 class="heading">Our Products</h1>
+        <p class="heading-description">Sip the Magic, Taste the Bubbles!</p>
+
+        <div class="search-category-container">
+            <input type="text" id="searchInput" placeholder="Search for products..." oninput="searchItems()" />
+            <select id="categorySelect" onchange="filterCategory()">
+                <option value="all">All Products</option>
+                <option value="milktea">Milktea</option>
+                <option value="fruit-beverages">Fruit Beverages</option>
+            </select>
+        </div>
+
+        <div class="container" id="productContainer">
+            <!-- Item 1 -->
+            <div class="item" data-category="milktea">
+                <img src="img/milktea1.png" alt="Item 1" />
+                <h3>Matcha Mingle</h3>
+                <p><i>An irresistible fusion of coffee and chocolate, delivering a rich and velvety mocha experience</i></p>
+                <p>₱149.00</p>
+                <button onclick="addToCart('Item 1', '₱149.00')">Add to Cart</button>
+            </div>
+            <!-- Item 2 -->
+            <div class="item" data-category="milktea">
+                <img src="img/milktea2.png" alt="Item 2" />
+                <h3>Oreo Crumble Dream</h3>
+                <p><i>Creamy milk tea layered with crushed Oreos, giving you a crunchy and creamy dessert in a cup</i></p>
+                <p>₱169.00</p>
+                <button onclick="addToCart('Item 2', '₱169.00')">Add to Cart</button>
+            </div>
+            <!-- Item 3 -->
+            <div class="item" data-category="milktea">
+                <img src="img/milktea3.png" alt="Item 3" />
+                <h3>Tapioca Twist</h3>
+                <p><i>Classic milk tea elevated with chewy tapioca pearls, a delightful balance of flavor and texture</i></p>                </i></p>
+                <p>₱169.00</p>
+                <button onclick="addToCart('Item 3', '₱169.00')">Add to Cart</button>
+            </div>
+            <!-- Item 4 -->
+            <div class="item" data-category="milktea">
+                <img src="img/milktea4.png" alt="Item 4" />
+                <h3>Golden Mango Glow</h3>
+                <p><i>Tropical mango magic with a smooth, creamy base, bursting with refreshing and fruity sweetness</i></p>
+                <p>₱129.00</p>
+                <button onclick="addToCart('Item 4', '₱129.00')">Add to Cart</button>
+            </div>
+            <!-- Item 5 -->
+            <div class="item" data-category="milktea">
+                <img src="img/milktea5.png" alt="Item 5" />
+                <h3>Berry Bliss</h3>
+                <p><i>A luscious strawberry milk tea with a creamy finish, perfectly balanced with the sweetness of ripe strawberries</i></p>
+                <p>₱129.00</p>
+                <button onclick="addToCart('Item 5', '₱129.00')">Add to Cart</button>
+            </div>
+            <!-- Item 6 -->
+            <div class="item" data-category="milktea">
+                <img src="img/milktea6.png" alt="Item 6" />
+                <h3>Choco Charm</h3>
+                <p><i>Pure chocolate indulgence, smooth and decadent, crafted for the ultimate cocoa lovers</i></p>
+                <p>₱129.00</p>
+                <button onclick="addToCart('Item 6', '₱129.00')">Add to Cart</button>
+            </div>
+        </div>
+
+        <section class="menu-section" id="fruit-beverages">
+            <h2>Fruit Beverages</h2>
+            <div class="container" >
+                <!-- Item 4 -->
+                <div class="item" data-category="fruit-beverages"> 
+                    <img src="img/blueberry.png" alt="Item 4" />
+                    <h3>Blueberry Breeze</h3>
+                    <p><i>A wave of vibrant blueberry flavors, blended with a creamy base for a refreshing, fruity escape</i></p>
+                    <p>₱129.00</p>
+                    <button onclick="addToCart('Golden Mango Glow', '₱129.00')">Add to Cart</button>
+                </div>
+                <!-- Item 5 -->
+                <div class="item" data-category="fruit-beverages">
+                    <img src="img/coconut.png" alt="Item 5" />
+                    <h3>Coconut Dream</h3>
+                    <p><i>A creamy, tropical coconut delight, with a smooth finish that’ll transport you to a beachside paradise</i></p>
+                    <p>₱129.00</p>
+                    <button onclick="addToCart('Berry Bliss', '₱129.00')">Add to Cart</button>
+                </div>
+                <!-- Item 6 -->
+                <div class="item" data-category="fruit-beverages">
+                    <img src="img/watermelon.png" alt="Item 6" />
+                    <h3>Watermelon Splash</h3>
+                    <p><i>A cool, juicy watermelon treat that combines sweetness and refreshment for the perfect sip on a hot day</i></p>
+                    <p>₱139.00</p>
+                    <button onclick="addToCart('Peach Paradise', '₱139.00')">Add to Cart</button>
+                </div>
+                <div class="item" data-category="fruit-beverages">
+                    <img src="img/pineapple.png" alt="Item 6" />
+                    <h3>Pineapple Bliss</h3>
+                    <p><i>A tropical getaway in every sip, with the tangy, sweet taste of ripe pineapple and a refreshing twist</i></p>
+                    <p>₱139.00</p>
+                    <button onclick="addToCart('Peach Paradise', '₱139.00')">Add to Cart</button>
+                </div>
+                <div class="item" data-category="fruit-beverages">
+                    <img src="img/melon.png" alt="Item 6" />
+                    <h3>Melon Melody</h3>
+                    <p><i>Sweet and juicy melon flavors combined with a splash of citrus for the perfect burst of sunshine in a drink</i></p>
+                    <p>₱139.00</p>
+                    <button onclick="addToCart('Peach Paradise', '₱139.00')">Add to Cart</button>
+                </div>
+                <div class="item" data-category="fruit-beverages">
+                    <img src="img/strawberry.png" alt="Item 6" />
+                    <h3>Strawberry Serenade</h3>
+                    <p><i>A delightful, sweet strawberry infusion with a smooth, creamy texture—pure indulgence in every sip</i></p>
+                    <p>₱139.00</p>
+                    <button onclick="addToCart('Peach Paradise', '₱139.00')">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Main Content End -->
+
+    <script>
+    // Function to filter products by search query
+    function searchItems() {
+        const searchTerm = document.getElementById("searchInput").value.toLowerCase();
+        const items = document.querySelectorAll('.item');
+        
+        items.forEach(item => {
+            const name = item.querySelector('h3').textContent.toLowerCase();
+            if (name.includes(searchTerm)) {
+                item.style.display = "block"; // Show item if it matches search term
+            } else {
+                item.style.display = "none"; // Hide item if it doesn't match
+            }
+        });
+        filterCategory(); // Reapply category filter after search
+    }
+
+    // Function to filter products by selected category
+    function filterCategory() {
+        const selectedCategory = document.getElementById("categorySelect").value;
+        const items = document.querySelectorAll('.item');
+        
+        items.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            if (selectedCategory === "all" || itemCategory === selectedCategory) {
+                item.style.display = "block"; // Show item if it matches selected category
+            } else {
+                item.style.display = "none"; // Hide item if it doesn't match
+            }
+        });
+    }
+
+    // Initialize category filter on page load
+    document.addEventListener("DOMContentLoaded", () => {
+        filterCategory(); // Ensure category filter is applied by default
+    });
+    // Add to Cart Function
+    function addToCart(itemName, itemPrice) {
+        alert(itemName + " has been added to your cart for " + itemPrice);
+    }
+    </script>
+</body>
+<footer>
+    <p>&copy; 2025 Bubble Milky Brew. All rights reserved.</p>
+    <ul>
+        <li><a href="#privacy">Privacy Policy</a></li>
+        <li><a href="#terms">Terms of Use</a></li>
+    </ul>
+</footer>
+</body>
+</html>

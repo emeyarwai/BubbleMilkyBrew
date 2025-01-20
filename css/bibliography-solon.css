@@ -1,0 +1,143 @@
+body {
+    background-color: #CD9663;
+  }
+  
+  .header {
+    color: white;
+    border: 5px solid white;
+    text-align: center;
+    background-color: #664229;
+  }
+  
+  .social-link {
+    text-align: center;
+  }
+  
+  .bio-container,
+  .hobbies-container,
+  .quote-container,
+  .career-container {
+    background-color: #664229;
+    padding: 2px;
+    border: 5px solid white;
+  }
+  
+  .bio-text,
+  .hobbies-text,
+  .quote-text,
+  .career-text {
+    background-color: #664229;
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+  }
+  
+  #schedule-container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 80%;
+  }
+  
+  table {
+    font-family: Arial, sans-serif;
+    border: 2px solid #664229;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  th, td {
+    border: 2px solid #664229;
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  th {
+    background-color: #F2F2F2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    background-color: #664229;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(98, 52, 18, 0.9); /* Semi-transparent background */
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.logo img {
+height: 70px;
+}
+
+header nav ul {
+list-style: none;
+display: flex;
+}
+
+header nav ul li {
+margin: 0 15px;
+}
+
+header nav ul li a {
+color: white;
+text-decoration: none;
+padding: 10px 15px;
+border-radius: 5px;
+transition: background 0.3s ease, transform 0.3s;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+background: #f4d03f;
+color: #623412;
+transform: scale(1.1);
+}
+
+/* Styling for the Login Button */
+.login-container {
+margin-left: auto; /* Align the login button to the right */
+}
+
+.login-btn {
+color: white;
+background-color: #e74c3c; /* Bold red background */
+padding: 12px 25px;
+border-radius: 25px; /* Rounded button */
+text-decoration: none;
+font-weight: bold;
+font-size: 16px;
+transition: background 0.3s ease, transform 0.3s;
+}
+
+.login-btn:hover {
+background-color: #c0392b; /* Darker red on hover */
+transform: scale(1.1);
+}
