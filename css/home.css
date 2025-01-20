@@ -78,7 +78,7 @@ header nav ul li a:hover {
         align-items: center;
         justify-content: center;
         padding: 80px 20px;
-        background-image: url('/css/title-background.jpg'); /* Replace with your background image */
+        background-image: url('/title-background.jpg'); /* Replace with your background image */
         background-size: cover; /* Ensure the background image covers the section */
         background-position: center center; /* Center the image */
         color: #623412; /* Set the text color to white for better contrast */
